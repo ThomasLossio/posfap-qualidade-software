@@ -21,4 +21,5 @@ Route.get('/', () => {
 })
 
 Route.post('users', 'UserController.store').validator('User/store')
+Route.post('tasks', 'TaskController.store').validator('Task/store')
 Route.post('sessions', 'SessionController.store').validator('Session/store')
